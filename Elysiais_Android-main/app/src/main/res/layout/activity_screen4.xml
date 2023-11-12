@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Screen4">
+    <TextView
+        android:id="@+id/screen4_first_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="John Appleseed\nAudi A4\n\n\n\n\n\n"/>
+    <TextView
+        android:id="@+id/scree4_second_text_view"
+        android:layout_below="@id/screen4_first_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You are about to start you \nVehicle Image Inspection"/>
+    <ImageButton
+        android:layout_below="@id/scree4_second_text_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/bmw"
+        android:onClick="startImageVideo"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Later"
+            android:layout_weight="1"
+            android:onClick="openScreen1"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:layout_weight="1"
+            android:onClick="openScreen5"/>
+    </LinearLayout>
+</RelativeLayout>
